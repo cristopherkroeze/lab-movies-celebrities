@@ -1,0 +1,12 @@
+<h1>Celebrities</h1>
+
+{{#each celebrities}}
+  <h3>Name: {{name}}</h3>
+  <p>Occupation: {{occupation}}</p>
+  <p>Catchphrase: {{catchphrase}}</p>
+  <br />
+  <form action="/celebrities/delete/{{_id}}" method="GET">
+    <button type="submit"> Delete </button>
+  </form>
+
+{{/each}}
